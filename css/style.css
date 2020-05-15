@@ -7,7 +7,7 @@
 body {
     background-image: url('../img/background.png');
     background-size: auto 100vh;
-    font-family: Arial;
+    font-family: 'DM Mono', monospace;
     height: 100vh; 
   }
 
@@ -53,10 +53,22 @@ body {
     color: whitesmoke;
     text-align: center;
   }
+
+  .site-title {
+    font-size: 4rem;
+    font-family: 'Parisienne', cursive;
+  }
   
   .site-subtitle {
     font-style: italic;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 2rem;
   }
+
+  .portfolio h2 {
+    font-family: 'Permanent Marker', cursive;
+  }
+
   .img-portfolio {
     width: 168px;
     height: 168px;
