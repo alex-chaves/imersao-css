@@ -27,7 +27,7 @@ body {
   
   .menu ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   
   .menu li {
@@ -56,4 +56,8 @@ body {
   
   .site-subtitle {
     font-style: italic;
+  }
+  .img-portfolio {
+    width: 168px;
+    height: 168px;
   }
