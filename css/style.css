@@ -17,98 +17,120 @@ body {
     }
   }
 
-  header {
-    height: 100%;
-    display: flex;
+header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+  
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.menu li {
+  list-style: none;
+}
+  
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+  
+a:hover {
+  text-decoration: underline;
+}
+  
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4rem;
+  font-family: 'Parisienne', cursive;
+}
+  
+.site-subtitle {
+  font-style: italic;
+  font-family: 'Permanent Marker', cursive;
+  line-height: 2rem;
+}
+
+.contato,
+.portfolio {
+  padding: 2em;
+}
+
+.contato,  
+.portfolio h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: ghostwhite;
+  margin-bottom: 1.3em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 4em;
+}
+
+@media (min-width: 600px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px;
     justify-content: center;
-    align-items: center;
+    height: calc(100vh - 5em - 50px);
   }
+}
 
-  .menu{
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
+@media (min-width: 850px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px 240px;
+    justify-content: center;
+    align-content: center;
+    height: calc(100vh - 5em - 50px);
   }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .menu li {
-    list-style: none;
-  }
-  
-  .menu a {
-    display: block;
-    padding: 10px 20px;
-  }
+}
 
-  a {
-    color: teal;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .site-subtitle,
-  .site-title {
-    color: whitesmoke;
-    text-align: center;
-  }
+.portfolio figure {
+  text-align: center;
+}
 
-  .site-title {
-    font-size: 4rem;
-    font-family: 'Parisienne', cursive;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-    font-family: 'Permanent Marker', cursive;
-    line-height: 2rem;
-  }
+.img-portfolio {
+  width: 268px;
+  height: 168px;
+  object-fit: cover;
+}
 
-  .portfolio {
-    padding: 2rem;
-  }
+.contato {
+  min-height: 90vh;
+}
 
-  .portfolio h2 {
-    font-family: 'Permanent Marker', cursive;
-    color: ghostwhite;
-    margin-bottom: 1.3rem;
-  }
+.contato .icons{
+  text-align: center;
+}
 
-  .portfolio .grid {
-    display: grid;
-    gap: 4rem;
-  }
+.contato a {
+  color: aliceblue;
+  font-size: 4em;
+  margin: 0 10px;
+}
 
-  @media (min-width: 600px){
-    .portfolio .grid{
-      grid-template-columns: 240px 240px;
-      justify-content: center;
-      height: calc(100vh - 5em - 50px);
-    }
-  }
-
-  @media (min-width: 850px){
-    .portfolio .grid{
-      grid-template-columns: 240px 240px 240px;
-      justify-content: center;
-      align-content: center;
-      height: calc(100vh - 5em - 50px);
-    }
-  }
-
-  .portfolio figure {
-    text-align: center;
-  }
-
-  .img-portfolio {
-    width: 268px;
-    height: 168px;
-    object-fit: cover;
-  }
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+  cursor: pointer;
+}
