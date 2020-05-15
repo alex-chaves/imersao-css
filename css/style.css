@@ -11,6 +11,12 @@ body {
     height: 100vh; 
   }
 
+  @media (min-width:600px) {
+    body {
+    font-size: 18px;
+    }
+  }
+
   header {
     height: 100%;
     display: flex;
@@ -65,11 +71,44 @@ body {
     line-height: 2rem;
   }
 
+  .portfolio {
+    padding: 2rem;
+  }
+
   .portfolio h2 {
     font-family: 'Permanent Marker', cursive;
+    color: ghostwhite;
+    margin-bottom: 1.3rem;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 4rem;
+  }
+
+  @media (min-width: 600px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px;
+      justify-content: center;
+      height: calc(100vh - 5em - 50px);
+    }
+  }
+
+  @media (min-width: 850px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px 240px;
+      justify-content: center;
+      align-content: center;
+      height: calc(100vh - 5em - 50px);
+    }
+  }
+
+  .portfolio figure {
+    text-align: center;
   }
 
   .img-portfolio {
-    width: 168px;
+    width: 268px;
     height: 168px;
+    object-fit: cover;
   }
