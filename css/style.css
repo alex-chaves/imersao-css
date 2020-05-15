@@ -132,6 +132,7 @@ a:hover {
   color: aliceblue;
   font-size: 4em;
   margin: 0 10px;
+  transition: text-shadow 1s;
 }
 
 .contato a:hover {
