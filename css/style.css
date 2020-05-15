@@ -11,13 +11,17 @@ body {
     height: 100vh; 
   }
 
+  
   .menu{
     background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
   
   .menu ul {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-evenly;
   }
   
   .menu li {
