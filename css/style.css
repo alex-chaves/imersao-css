@@ -11,7 +11,13 @@ body {
     height: 100vh; 
   }
 
-  
+  header {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .menu{
     background-color: white;
     position: fixed;
@@ -28,6 +34,11 @@ body {
     list-style: none;
   }
   
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
+
   a {
     color: teal;
     text-decoration: none;
