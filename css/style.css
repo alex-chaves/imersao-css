@@ -43,6 +43,11 @@ header {
 .menu a {
   display: block;
   padding: 10px 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.menu a:hover {
+  background-color: rgb(59, 56, 56);
 }
 
 a {
