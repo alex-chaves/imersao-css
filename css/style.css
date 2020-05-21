@@ -102,7 +102,6 @@ a:hover {
 }
 
 .sobre,
-.contato,
 .portfolio {
   padding: 2em;
   min-height: 100vh;
@@ -230,6 +229,11 @@ a:hover {
 
 .contato .icons{
   text-align: center;
+}
+
+.contato {
+  padding: 2em;
+  min-height: 50vh;
 }
 
 .contato a {
